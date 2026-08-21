@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const quickLinks = [
   { name: "Home", path: "/home" },
@@ -59,15 +60,21 @@ export default function Footer() {
   return (
     <footer className="bg-[#050505] text-white">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16 lg:px-10 lg:py-20">
+
         {/* Main Footer */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.2fr_1.1fr_1.2fr_1fr] lg:gap-12">
+
           {/* Brand */}
           <div>
             <Link
               to="/home"
-              className="inline-block text-[30px] font-bold tracking-[-1.5px] text-[#00529C]"
+              className="inline-block"
             >
-              KTA<span className="text-white">.</span>
+              <img
+                src={logo}
+                alt="KonfirmTech Africa"
+                className="h-auto w-47.5 object-contain"
+              />
             </Link>
 
             <p className="mt-6 max-w-75 text-[14px] leading-5 text-[#92949B]">
@@ -87,7 +94,7 @@ export default function Footer() {
                     aria-label={social.label}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-[#17181B] text-[#92949B] transition-all duration-200 hover:bg-[#00529C] hover:text-white"
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-[#17181B] text-[#92949B] transition-all duration-200 hover:bg-[#1565A9] hover:text-white"
                   >
                     <Icon size={16} />
                   </a>
@@ -107,7 +114,7 @@ export default function Footer() {
                 <Link
                   key={link.name}
                   to={link.path}
-                    className="w-fit text-[14px] text-[#A1A3A9] transition-colors duration-200 hover:text-[#00529C]"
+                  className="w-fit text-[14px] text-[#A1A3A9] transition-colors duration-200 hover:text-[#1565A9]"
                 >
                   {link.name}
                 </Link>
@@ -126,7 +133,7 @@ export default function Footer() {
                 <Link
                   key={service}
                   to="/services"
-                    className="w-fit text-[14px] text-[#A1A3A9] transition-colors duration-200 hover:text-[#00529C]"
+                  className="w-fit text-[14px] text-[#A1A3A9] transition-colors duration-200 hover:text-[#1565A9]"
                 >
                   {service}
                 </Link>
@@ -141,6 +148,7 @@ export default function Footer() {
             </h3>
 
             <div className="mt-6 space-y-5">
+
               {/* Email */}
               <div>
                 <p className="text-[13px] text-[#74767D]">
@@ -149,7 +157,7 @@ export default function Footer() {
 
                 <a
                   href="mailto:info@konfirmtechafrica.com"
-                  className="mt-1 block text-[14px] text-[#D1D2D5] transition-colors hover:text-[#00529C]"
+                  className="mt-1 block text-[14px] text-[#D1D2D5] transition-colors hover:text-[#1565A9]"
                 >
                   info@konfirmtechafrica.com
                 </a>
@@ -163,7 +171,7 @@ export default function Footer() {
 
                 <a
                   href="tel:+2347060913641"
-                  className="mt-1 block text-[14px] text-[#D1D2D5] transition-colors hover:text-[#00529C]"
+                  className="mt-1 block text-[14px] text-[#D1D2D5] transition-colors hover:text-[#1565A9]"
                 >
                   +234 706 091 3641
                 </a>
@@ -179,11 +187,12 @@ export default function Footer() {
                   href="https://wa.me/2347060913641"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 inline-block text-[14px] font-medium text-[#00529C] transition-colors hover:text-[#003F78]"
+                  className="mt-1 inline-block text-[14px] font-medium text-[#F5A21A] transition-colors hover:text-[#1565A9]"
                 >
                   Chat with us →
                 </a>
               </div>
+
             </div>
           </div>
         </div>
@@ -191,9 +200,10 @@ export default function Footer() {
         {/* Bottom Divider */}
         <div className="mt-14 border-t border-[#191A1D] pt-7 sm:mt-16">
           <div className="flex flex-col gap-5 text-[12px] text-[#777A82] lg:flex-row lg:items-center lg:justify-between">
+
             {/* Copyright */}
             <p>
-              © 2026 Konfirm Tech Africa. All Rights Reserved.
+              © 2026 KonfirmTech Africa. All Rights Reserved.
             </p>
 
             {/* Legal Links */}
@@ -226,6 +236,7 @@ export default function Footer() {
                 AI Assistant Disclaimer
               </Link>
             </div>
+
           </div>
         </div>
       </div>
