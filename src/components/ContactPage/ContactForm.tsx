@@ -8,9 +8,30 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="rounded-2xl border border-[#E5E7EB] bg-white p-7 shadow-[0_8px_20px_rgba(0,0,0,0.08)] sm:p-8 lg:p-10"
+      className="
+        rounded-2xl
+        border border-[#E5E7EB]
+        bg-white
+        p-7
+        shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+        sm:p-8
+        lg:p-10
+
+        dark:border-gray-800
+        dark:bg-[#151515]
+        dark:shadow-[0_8px_20px_rgba(0,0,0,0.25)]
+      "
     >
-      <h2 className="text-[24px] font-bold tracking-[-0.6px] text-[#080808]">
+      <h2
+        className="
+          text-[24px]
+          font-bold
+          tracking-[-0.6px]
+          text-[#080808]
+
+          dark:text-white
+        "
+      >
         Send us a Message
       </h2>
 
@@ -28,14 +49,49 @@ export default function ContactForm() {
         <Field label="Subject" placeholder="How can we help?" />
 
         <div>
-          <label className="mb-2 block text-[14px] font-semibold text-[#080808]">
+          <label
+            className="
+              mb-2
+              block
+              text-[14px]
+              font-semibold
+              text-[#080808]
+
+              dark:text-gray-200
+            "
+          >
             Message
           </label>
 
           <textarea
             rows={5}
             placeholder="Tell us about your project or inquiry..."
-            className="w-full resize-y rounded-md border border-[#E1E3E6] px-3 py-3 text-[14px] outline-none placeholder:text-[#8A8D96] focus:border-[#00529C] focus:ring-2 focus:ring-[#00529C]/10"
+            className="
+              w-full
+              resize-y
+              rounded-md
+              border
+              border-[#E1E3E6]
+              bg-white
+              px-3
+              py-3
+              text-[14px]
+              text-[#080808]
+              outline-none
+
+              placeholder:text-[#8A8D96]
+
+              focus:border-[#00529C]
+              focus:ring-2
+              focus:ring-[#00529C]/10
+
+              dark:border-gray-700
+              dark:bg-[#1D1D1D]
+              dark:text-white
+              dark:placeholder:text-gray-500
+              dark:focus:border-[#4DA3FF]
+              dark:focus:ring-[#4DA3FF]/10
+            "
           />
         </div>
 
@@ -43,7 +99,24 @@ export default function ContactForm() {
           type="submit"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.98 }}
-          className="flex h-12 w-full items-center justify-center gap-2 rounded-md bg-[#00529C] text-[15px] font-semibold text-white transition hover:bg-[#003F78]"
+          className="
+            flex
+            h-12
+            w-full
+            items-center
+            justify-center
+            gap-2
+            rounded-md
+            bg-[#00529C]
+            text-[15px]
+            font-semibold
+            text-white
+            transition
+            hover:bg-[#003F78]
+
+            dark:bg-[#1478C9]
+            dark:hover:bg-[#0E64A8]
+          "
         >
           Send Message
           <Send size={17} />
@@ -62,14 +135,48 @@ function Field({
 }) {
   return (
     <div>
-      <label className="mb-2 block text-[14px] font-semibold text-[#080808]">
+      <label
+        className="
+          mb-2
+          block
+          text-[14px]
+          font-semibold
+          text-[#080808]
+
+          dark:text-gray-200
+        "
+      >
         {label}
       </label>
 
       <input
         type="text"
         placeholder={placeholder}
-        className="h-12 w-full rounded-md border border-[#E1E3E6] px-3 text-[14px] outline-none placeholder:text-[#8A8D96] focus:border-[#00529C] focus:ring-2 focus:ring-[#00529C]/10"
+        className="
+          h-12
+          w-full
+          rounded-md
+          border
+          border-[#E1E3E6]
+          bg-white
+          px-3
+          text-[14px]
+          text-[#080808]
+          outline-none
+
+          placeholder:text-[#8A8D96]
+
+          focus:border-[#00529C]
+          focus:ring-2
+          focus:ring-[#00529C]/10
+
+          dark:border-gray-700
+          dark:bg-[#1D1D1D]
+          dark:text-white
+          dark:placeholder:text-gray-500
+          dark:focus:border-[#4DA3FF]
+          dark:focus:ring-[#4DA3FF]/10
+        "
       />
     </div>
   );
