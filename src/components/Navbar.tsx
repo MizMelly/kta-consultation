@@ -1,9 +1,11 @@
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === "undefined") {
       return false;
@@ -28,7 +30,6 @@ export default function Navbar() {
     }
   }, [isDark]);
 
-  /* Toggle theme */
   const toggleTheme = () => {
     const nextTheme = !isDark;
 
@@ -45,15 +46,16 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur transition-colors duration-300 dark:border-gray-800 dark:bg-[#080D0D]/95">
-      <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
+      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
 
         {/* Logo */}
-        <Link
-          to="/"
-          className="text-[25px] font-bold tracking-[-0.8px] text-[#00529C]"
-        >
-          KTA.
-        </Link>
+<Link to="/" className="flex items-center">
+  <img
+    src={logo}
+    alt="Konfirm Tech Africa"
+    className="h-24 w-auto object-contain"
+  />
+</Link>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 lg:flex">
