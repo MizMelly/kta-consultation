@@ -1,0 +1,200 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+/* ================================
+   HERO ANIMATIONS
+================================ */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroGlowRight {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-25px, 20px) scale(1.08);
+  }
+}
+
+@keyframes heroGlowCenter {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translate(25px, 15px);
+    opacity: 1;
+  }
+}
+
+.hero-heading {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.1s forwards;
+}
+
+.hero-description {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.35s forwards;
+}
+
+.hero-buttons {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.55s forwards;
+}
+
+.hero-glow-right {
+  animation: heroGlowRight 7s ease-in-out infinite;
+}
+
+.hero-glow-center {
+  animation: heroGlowCenter 6s ease-in-out infinite;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-heading,
+  .hero-description,
+  .hero-buttons,
+  .hero-glow-right,
+  .hero-glow-center {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =================================
+   ABOUT INTRO ANIMATIONS
+================================= */
+
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aboutVisualReveal {
+  from {
+    opacity: 0;
+    transform: translateX(45px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes aboutGlow {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.9;
+  }
+}
+
+@keyframes aboutTarget {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+/* Left content */
+
+.about-heading {
+  opacity: 0;
+  animation: aboutFadeUp 0.8s ease-out 0.1s forwards;
+}
+
+.about-description {
+  opacity: 0;
+  animation: aboutFadeUp 0.8s ease-out 0.3s forwards;
+}
+
+.about-link {
+  opacity: 0;
+  animation: aboutFadeUp 0.8s ease-out 0.5s forwards;
+}
+
+/* Right visual */
+
+.about-visual {
+  opacity: 0;
+  animation: aboutVisualReveal 0.9s ease-out 0.25s forwards;
+}
+
+/* Glow */
+
+.about-glow {
+  animation: aboutGlow 5s ease-in-out infinite;
+}
+
+/* Target */
+
+.about-target {
+  animation: aboutTarget 4s ease-in-out infinite;
+}
+
+
+/* =================================
+   REDUCED MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-heading,
+  .about-description,
+  .about-link,
+  .about-visual,
+  .about-glow,
+  .about-target {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
