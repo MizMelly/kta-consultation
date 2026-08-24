@@ -11,6 +11,7 @@ const stories = [
     description:
       "Complete digital transformation from brand identity to a comprehensive e-commerce platform and ongoing digital marketing.",
     image: enekemImage,
+     imagePosition: "object-center",
   },
   {
     category: "PROPTECH",
@@ -18,6 +19,7 @@ const stories = [
     description:
       "Building trust in African real estate through a verified listing platform and automated CRM systems.",
     image: veriPropertyImage,
+    imagePosition: "object-[center_35%]",
   },
 ];
 
@@ -60,7 +62,7 @@ export default function SuccessStories() {
                 <img
                   src={story.image}
                   alt={story.title}
-                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+                   className={`h-full w-full object-cover ${story.imagePosition} transition-transform duration-500 group-hover:scale-[1.03]`}
                 />
               </div>
 

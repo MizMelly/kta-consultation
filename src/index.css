@@ -198,3 +198,47 @@ body {
     transform: none;
   }
 }
+/* ================================
+   HERO IMAGE ANIMATIONS
+================================ */
+
+@keyframes heroImageReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroImageFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-image-wrap {
+  opacity: 0;
+  animation: heroImageReveal 0.9s ease-out 0.65s forwards;
+}
+
+.hero-image-card {
+  animation: heroImageFloat 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image-wrap,
+  .hero-image-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
