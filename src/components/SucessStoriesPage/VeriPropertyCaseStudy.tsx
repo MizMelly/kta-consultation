@@ -4,7 +4,7 @@ import {
   Check,
   MessageSquareQuote,
 } from "lucide-react";
-import veriPropertyImage from "../../assets/veriproperty.jpeg";
+import veriPropertyImage from "../../assets/Veriproperty Banner.jpg.jpeg";
 
 const results = [
   {
