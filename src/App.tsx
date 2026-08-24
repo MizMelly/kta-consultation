@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-// import SuccessStories from "./pages/SuccessStories";
+import SuccessStories from "./pages/SuccessStories";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
        <Route path="/services" element={<Services />} />
-        {/*  <Route path="/success-stories" element={<SuccessStories />} />*/}
+        <Route path="/success-stories" element={<SuccessStories />} />
         <Route path="/contact" element={<Contact />} /> 
       </Routes> 
     </BrowserRouter>
