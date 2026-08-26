@@ -37,7 +37,7 @@ const services = [
 export default function CaseStudyDetails() {
   return (
     <section className="bg-[#F7F2EA] px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:bg-[#0B0B0B]">
-      <div className="mx-auto grid max-w-[1265px] gap-14 lg:grid-cols-[1fr_0.95fr]">
+      <div className="mx-auto grid max-w-316.25 gap-14 lg:grid-cols-[1fr_0.95fr]">
         {/* Left content */}
         <div>
           <div>
@@ -51,7 +51,7 @@ export default function CaseStudyDetails() {
               </h3>
             </div>
 
-            <p className="mt-6 max-w-[650px] text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
+            <p className="mt-6 max-w-162.5 text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
               Enekem Medicals had a strong clinical reputation but a digital
               presence that didn't reflect it. Patients struggled to find
               information, book appointments, or engage with the practice
@@ -71,7 +71,7 @@ export default function CaseStudyDetails() {
               </h3>
             </div>
 
-            <p className="mt-6 max-w-[650px] text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
+            <p className="mt-6 max-w-162.5 text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
               KTA designed and developed a modern, patient-first website that
               communicates trust and professionalism. We integrated an
               AI-powered appointment booking system that reduced administrative
@@ -109,7 +109,7 @@ export default function CaseStudyDetails() {
             {results.map((result) => (
               <div
                 key={result.title}
-                className="flex gap-5 rounded-[16px] border border-[#DED5C7] bg-[#F7F2EA] px-6 py-6 dark:border-gray-800 dark:bg-[#111111]"
+                className="flex gap-5 rounded-2xl border border-[#DED5C7] bg-[#F7F2EA] px-6 py-6 dark:border-gray-800 dark:bg-[#111111]"
               >
                 <Check className="mt-1 h-4 w-4 shrink-0 text-[#1565A9]" />
 
@@ -126,7 +126,7 @@ export default function CaseStudyDetails() {
             ))}
           </div>
 
-          <div className="mt-6 rounded-[16px] border border-[#DED5C7] bg-[#F7F2EA] px-6 py-7 dark:border-gray-800 dark:bg-[#111111]">
+          <div className="mt-6 rounded-2xl border border-[#DED5C7] bg-[#F7F2EA] px-6 py-7 dark:border-gray-800 dark:bg-[#111111]">
             <MessageSquareQuote className="h-5 w-5 text-[#1565A9]" />
 
             <p className="mt-5 text-[15px] font-medium italic leading-7 text-[#0B1220] dark:text-gray-100">

@@ -4,12 +4,12 @@ export default function SuccessStoryCTA() {
   return (
     <section className="relative overflow-hidden bg-[#0B1220] px-5 py-24 text-white sm:px-8 lg:px-10 lg:py-28">
       {/* Grid background */}
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.055)_1px,transparent_1px)] bg-[size:160px_80px]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.055)_1px,transparent_1px)] bg-size-[160px_80px]" />
 
       {/* Blue glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(21,101,169,0.24),transparent_55%)]" />
 
-      <div className="relative z-10 mx-auto flex max-w-[900px] flex-col items-center text-center">
+      <div className="relative z-10 mx-auto flex max-w-225 flex-col items-center text-center">
         <p className="text-[12px] font-extrabold uppercase tracking-[7px] text-[#F5A21A]">
           Your Turn
         </p>

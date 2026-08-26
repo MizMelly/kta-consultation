@@ -4,7 +4,7 @@ import {
   Check,
   MessageSquareQuote,
 } from "lucide-react";
-import veriPropertyImage from "../../assets/Veriproperty Banner.jpg.jpeg";
+import veriPropertyImage from "../../assets/VeripropertyBanner.jpeg";
 
 const results = [
   {
@@ -41,18 +41,18 @@ const services = [
 export default function VeriPropertyCaseStudy() {
   return (
     <section className="bg-[#F7F2EA] px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:bg-[#0B0B0B]">
-      <div className="mx-auto max-w-[1230px] border-t border-[#DED5C7] pt-24 dark:border-gray-800">
+      <div className="mx-auto max-w-307.5 border-t border-[#DED5C7] pt-24 dark:border-gray-800">
         {/* Hero card */}
-        <div className="relative h-[385px] overflow-hidden rounded-[22px] bg-[#1565A9]">
+        <div className="relative h-96.25 overflow-hidden rounded-[22px] bg-[#1565A9]">
   <img
     src={veriPropertyImage}
     alt="Modern apartment building"
     className="absolute inset-0 h-full w-full object-cover object-center"
   />
 
-  <div className="absolute inset-0 bg-gradient-to-r from-[#1565A9]/65 via-[#1565A9]/25 to-transparent" />
+  <div className="absolute inset-0 bg-linear-to-r from-[#1565A9]/65 via-[#1565A9]/25 to-transparent" />
 
-  <div className="relative z-10 flex h-full max-w-[650px] flex-col justify-end px-8 py-10 sm:px-12">
+  <div className="relative z-10 flex h-full max-w-162.5 flex-col justify-end px-8 py-10 sm:px-12">
     <span className="mb-5 inline-flex w-fit rounded-full border border-white/60 px-4 py-1.5 text-[12px] font-bold uppercase tracking-[0.6px] text-[#F5A21A]">
       Property Technology
     </span>
@@ -82,7 +82,7 @@ export default function VeriPropertyCaseStudy() {
                 </h3>
               </div>
 
-              <p className="mt-6 max-w-[650px] text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
+              <p className="mt-6 max-w-162.5 text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
                 VeriProperty had a bold vision: to use AI to bring transparency,
                 trust, and efficiency to the Nigerian real estate market. But
                 vision alone doesn't build a platform. They needed a partner
@@ -102,7 +102,7 @@ export default function VeriPropertyCaseStudy() {
                 </h3>
               </div>
 
-              <p className="mt-6 max-w-[650px] text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
+              <p className="mt-6 max-w-162.5 text-[17px] font-medium leading-8 text-[#6C665D] dark:text-gray-400">
                 KTA led end-to-end digital execution for VeriProperty. We
                 developed the product strategy, designed the full UI/UX
                 experience, and built the AI-powered platform from the ground
@@ -141,7 +141,7 @@ export default function VeriPropertyCaseStudy() {
               {results.map((result) => (
                 <div
                   key={result.title}
-                  className="flex gap-5 rounded-[16px] border border-[#DED5C7] bg-[#F7F2EA] px-6 py-6 dark:border-gray-800 dark:bg-[#111111]"
+                  className="flex gap-5 rounded-2xl border border-[#DED5C7] bg-[#F7F2EA] px-6 py-6 dark:border-gray-800 dark:bg-[#111111]"
                 >
                   <Check className="mt-1 h-4 w-4 shrink-0 text-[#1565A9]" />
 
@@ -158,7 +158,7 @@ export default function VeriPropertyCaseStudy() {
               ))}
             </div>
 
-            <div className="mt-6 rounded-[16px] border border-[#DED5C7] bg-[#F7F2EA] px-6 py-7 dark:border-gray-800 dark:bg-[#111111]">
+            <div className="mt-6 rounded-2xl border border-[#DED5C7] bg-[#F7F2EA] px-6 py-7 dark:border-gray-800 dark:bg-[#111111]">
               <MessageSquareQuote className="h-5 w-5 text-[#1565A9]" />
 
               <p className="mt-5 text-[15px] font-medium italic leading-7 text-[#0B1220] dark:text-gray-100">
