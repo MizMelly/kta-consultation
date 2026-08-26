@@ -15,7 +15,7 @@ const quickLinks = [
   { name: "Services", path: "/services" },
   { name: "Success Stories", path: "/success-stories" },
   { name: "Contact Us", path: "/contact" },
-  { name: "Book a Free Consultation", path: "/contact" },
+  { name: "Book a Free Consultation", path: "/booking" },
 ];
 
 const services = [

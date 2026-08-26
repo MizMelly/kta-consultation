@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="hero-buttons mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:items-center">
             {/* Primary CTA */}
             <Link
-              to="/contact"
+              to="/booking"
               className="group flex h-13 items-center justify-center gap-2 rounded-md bg-[#00529C] px-6 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#003F78] hover:shadow-lg sm:h-14 sm:px-7"
             >
               Book a Free Consultation

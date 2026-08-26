@@ -69,7 +69,7 @@ export default function ServicesHero() {
         </p>
 
         <motion.a
-          href="#foundation"
+          href="/booking"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.98 }}
           className="

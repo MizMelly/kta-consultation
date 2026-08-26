@@ -138,7 +138,7 @@ export default function ContactInfo() {
 
         <div className="mt-5 flex flex-col gap-3 sm:flex-row">
           <a
-            href="#consultation"
+            href="/booking"
             className="
               inline-flex
               h-11

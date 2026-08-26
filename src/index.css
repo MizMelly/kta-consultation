@@ -242,3 +242,28 @@ body {
     transform: none;
   }
 }
+
+/* =================================
+   Book a consultation button
+================================= */
+@keyframes bookingEnter {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.booking-enter {
+  animation: bookingEnter 350ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking-enter {
+    animation: none;
+  }
+}
