@@ -3,12 +3,14 @@ import {
   Lightbulb,
   Check,
   MessageSquareQuote,
+  ExternalLink,
 } from "lucide-react";
 
 const results = [
   {
     title: "AI-Assisted Booking",
-    description: "Automated appointment scheduling, reducing admin time by 60%",
+    description:
+      "Automated appointment scheduling, reducing admin time by 60%",
   },
   {
     title: "WhatsApp Automation",
@@ -34,12 +36,40 @@ const services = [
   "Digital Marketing",
 ];
 
+const socialLinks = [
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/share/19A9uaJLBM/",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/enekemmedicals?igsi=Y2xmdnd1cGd0cGZ6",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/enekemmedicals/",
+  },
+  {
+    name: "X",
+    href: "https://x.com/Enekemmedicals",
+  },
+  {
+    name: "TikTok",
+    href: "https://www.tiktok.com/@enekemmedicals",
+  },
+  {
+    name: "WhatsApp",
+    href: "https://wa.me/message/MCIL62PCUVRTB1",
+  },
+];
+
 export default function CaseStudyDetails() {
   return (
     <section className="bg-[#F7F2EA] px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:bg-[#0B0B0B]">
       <div className="mx-auto grid max-w-316.25 gap-14 lg:grid-cols-[1fr_0.95fr]">
         {/* Left content */}
         <div>
+          {/* Challenge */}
           <div>
             <div className="flex items-center gap-4">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#F5A21A]/10">
@@ -60,6 +90,7 @@ export default function CaseStudyDetails() {
             </p>
           </div>
 
+          {/* Solution */}
           <div className="mt-10">
             <div className="flex items-center gap-4">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1565A9]/10">
@@ -81,6 +112,7 @@ export default function CaseStudyDetails() {
             </p>
           </div>
 
+          {/* Services */}
           <div className="mt-14">
             <h4 className="text-[13px] font-extrabold uppercase tracking-[0.5px] text-[#6C665D] dark:text-gray-400">
               Services Delivered
@@ -101,6 +133,7 @@ export default function CaseStudyDetails() {
 
         {/* Right content */}
         <div>
+          {/* Results */}
           <h3 className="text-[15px] font-extrabold uppercase tracking-[0.6px] text-[#0B1220] dark:text-white">
             Results & Impact
           </h3>
@@ -126,6 +159,7 @@ export default function CaseStudyDetails() {
             ))}
           </div>
 
+          {/* Testimonial */}
           <div className="mt-6 rounded-2xl border border-[#DED5C7] bg-[#F7F2EA] px-6 py-7 dark:border-gray-800 dark:bg-[#111111]">
             <MessageSquareQuote className="h-5 w-5 text-[#1565A9]" />
 
@@ -137,6 +171,32 @@ export default function CaseStudyDetails() {
             <p className="mt-4 text-[13px] font-extrabold text-[#6C665D] dark:text-gray-400">
               — Enekem Medicals Management
             </p>
+          </div>
+
+          {/* Social Media */}
+          <div className="mt-6 rounded-2xl border border-[#DED5C7] bg-[#F7F2EA] px-6 py-6 dark:border-gray-800 dark:bg-[#111111]">
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="text-[13px] font-extrabold uppercase tracking-[0.5px] text-[#6C665D] dark:text-gray-400">
+                Follow Enekem Medicals
+              </h3>
+
+              <ExternalLink className="h-4 w-4 text-[#1565A9]" />
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Follow Enekem Medicals on ${social.name}`}
+                  className="inline-flex h-10 items-center justify-center rounded-full border border-[#DED5C7] bg-[#EEE8DD] px-4 text-[13px] font-bold text-[#0B1220] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#1565A9] hover:bg-[#1565A9] hover:text-white dark:border-gray-700 dark:bg-[#151515] dark:text-gray-300 dark:hover:border-[#1565A9] dark:hover:bg-[#1565A9] dark:hover:text-white"
+                >
+                  {social.name}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
