@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import victorImage from "../../assets/Okworie Victor Emmanuel.png";
 import iniobongImage from "../../assets/Iniobong Nyong.png";
 import blessingImage from "../../assets/Ocha Blessing Akwa.jpeg";
@@ -96,11 +98,14 @@ export default function LeadershipSection() {
             </div>
           ))}
         </div>
-
+        {/* Join the Team */}
         <div className="mt-16 flex justify-center">
-          <button className="rounded-md border border-[#E5E7EB] bg-white px-6 py-3 text-[14px] font-bold text-[#111827] shadow-sm transition hover:border-[#1565A9] hover:text-[#1565A9] dark:border-gray-800 dark:bg-[#111111] dark:text-white dark:hover:border-[#1565A9] dark:hover:text-[#F5A21A]">
+          <Link
+            to="/careers"
+            className="rounded-md border border-[#E5E7EB] bg-white px-6 py-3 text-[14px] font-bold text-[#111827] shadow-sm transition hover:border-[#1565A9] hover:text-[#1565A9] dark:border-gray-800 dark:bg-[#111111] dark:text-white dark:hover:border-[#1565A9] dark:hover:text-[#F5A21A]"
+          >
             Join the Team
-          </button>
+          </Link>
         </div>
       </div>
     </section>

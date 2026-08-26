@@ -5,7 +5,6 @@ import {
   FaTiktok,
   FaXTwitter,
 } from "react-icons/fa6";
-
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
@@ -60,16 +59,11 @@ export default function Footer() {
   return (
     <footer className="bg-[#050505] text-white">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16 lg:px-10 lg:py-20">
-
         {/* Main Footer */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.2fr_1.1fr_1.2fr_1fr] lg:gap-12">
-
           {/* Brand */}
           <div>
-            <Link
-              to="/home"
-              className="inline-block"
-            >
+            <Link to="/home" className="inline-block">
               <img
                 src={logo}
                 alt="KonfirmTech Africa"
@@ -148,7 +142,6 @@ export default function Footer() {
             </h3>
 
             <div className="mt-6 space-y-5">
-
               {/* Email */}
               <div>
                 <p className="text-[13px] text-[#74767D]">
@@ -192,7 +185,6 @@ export default function Footer() {
                   Chat with us →
                 </a>
               </div>
-
             </div>
           </div>
         </div>
@@ -200,7 +192,6 @@ export default function Footer() {
         {/* Bottom Divider */}
         <div className="mt-14 border-t border-[#191A1D] pt-7 sm:mt-16">
           <div className="flex flex-col gap-5 text-[12px] text-[#777A82] lg:flex-row lg:items-center lg:justify-between">
-
             {/* Copyright */}
             <p>
               © 2026 KonfirmTech Africa. All Rights Reserved.
@@ -216,27 +207,26 @@ export default function Footer() {
               </Link>
 
               <Link
-                to=""
+                to="/terms-conditions"
                 className="transition-colors hover:text-white"
               >
                 Terms & Conditions
               </Link>
 
               <Link
-                to=""
+                to="/cookie-policy"
                 className="transition-colors hover:text-white"
               >
                 Cookie Policy
               </Link>
 
               <Link
-                to=""
+                to="/ai-disclaimer"
                 className="transition-colors hover:text-white"
               >
                 AI Assistant Disclaimer
               </Link>
             </div>
-
           </div>
         </div>
       </div>
