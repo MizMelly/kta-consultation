@@ -46,7 +46,7 @@ export default function PresenceServices() {
   return (
     <section className="bg-white px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:border-gray-800
         dark:bg-[#0B0B0B]">
-      <div className="mx-auto max-w-[1375px]">
+      <div className="mx-auto max-w-343.75">
         {/* Heading */}
         <div>
           <h2 className="text-[32px] font-bold tracking-[-1.2px] text-[#050505] sm:text-[36px]">
@@ -61,14 +61,15 @@ export default function PresenceServices() {
 
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
+          {services.map((service, index) => (
+  <ServiceCard
+    key={service.title}
+    icon={service.icon}
+    title={service.title}
+    description={service.description}
+    index={index}
+  />
+))}
         </div>
       </div>
     </section>
