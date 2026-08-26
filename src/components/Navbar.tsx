@@ -20,6 +20,8 @@ export default function Navbar() {
     { name: "Services", path: "/services" },
     { name: "Success Stories", path: "/success-stories" },
     { name: "Contact", path: "/contact" },
+    
+
   ];
 
   useEffect(() => {
@@ -95,7 +97,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <Link
-            to="/contact"
+            to="/booking"
             className="flex h-11 items-center justify-center rounded-md bg-[#00529C] px-6 text-[14px] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#003F78] hover:shadow-md"
           >
             Book a Consultation
@@ -151,7 +153,7 @@ export default function Navbar() {
               </button>
 
               <Link
-                to="/contact"
+                to="/booking"
                 onClick={() => setIsOpen(false)}
                 className="rounded-md bg-[#00529C] px-5 py-3 text-sm font-semibold text-white"
               >

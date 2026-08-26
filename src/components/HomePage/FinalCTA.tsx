@@ -20,7 +20,7 @@ export default function FinalCTA() {
         <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
           {/* Primary */}
           <Link
-            to="/contact"
+            to="/booking"
             className="flex h-14 items-center justify-center rounded-md bg-white px-7 text-[14px] font-semibold text-[#00529C] shadow-sm transition-all duration-200 hover:bg-gray-50 hover:shadow-md"
           >
             Book a Free Consultation
