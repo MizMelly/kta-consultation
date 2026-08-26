@@ -216,21 +216,21 @@ export default function Footer() {
               </Link>
 
               <Link
-                to="/terms"
+                to=""
                 className="transition-colors hover:text-white"
               >
                 Terms & Conditions
               </Link>
 
               <Link
-                to="/cookies"
+                to=""
                 className="transition-colors hover:text-white"
               >
                 Cookie Policy
               </Link>
 
               <Link
-                to="/ai-disclaimer"
+                to=""
                 className="transition-colors hover:text-white"
               >
                 AI Assistant Disclaimer
