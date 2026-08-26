@@ -50,7 +50,7 @@ export default function Hero() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/2349168623219"
+              href="https://wa.link/03htci"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex h-13 items-center justify-center rounded-md border border-[#EEEEEE] bg-white px-6 text-[14px] font-medium text-[#202020] shadow-[0_2px_8px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-0.5 hover:border-gray-200 hover:bg-gray-50 hover:shadow-md sm:h-14 sm:px-7 dark:border-gray-800 dark:bg-[#101717] dark:text-white dark:hover:bg-[#151D1D]"
