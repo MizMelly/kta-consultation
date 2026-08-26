@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Target,
   TrendingUp,
   Users,

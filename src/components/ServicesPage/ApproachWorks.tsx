@@ -26,7 +26,7 @@ const approachItems = [
 export default function ApproachWorks() {
   return (
     <section className="bg-[#F7F7F8] px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:bg-[#0B0B0B]">
-      <div className="mx-auto max-w-[900px]">
+      <div className="mx-auto max-w-225">
         <div className="text-center">
           <h2 className="text-[32px] font-bold tracking-[-1.2px] text-[#050505] sm:text-[36px] dark:text-white">
             Why Our Approach Works
@@ -41,7 +41,7 @@ export default function ApproachWorks() {
           {approachItems.map((item) => (
             <div
               key={item.title}
-              className="flex items-start gap-4 rounded-[8px] border border-[#E5E7EB] bg-white px-5 py-5 shadow-sm dark:border-gray-800 dark:bg-[#111111]"
+              className="flex items-start gap-4 rounded-lg border border-[#E5E7EB] bg-white px-5 py-5 shadow-sm dark:border-gray-800 dark:bg-[#111111]"
             >
               <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-blue-600 dark:text-blue-400" />
 

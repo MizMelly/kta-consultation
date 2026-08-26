@@ -1,8 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import heroImage from "../../assets/hero.jpeg";
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-[#080D0D]">
@@ -58,19 +56,6 @@ export default function Hero() {
             >
               Chat on WhatsApp
             </a>
-          </div>
-        </div>
-
-        {/* Hero image */}
-        <div className="hero-image-wrap relative mx-auto hidden w-full max-w-[410px] lg:block">
-          <div className="absolute -inset-3 rounded-[22px] bg-[#1565A9]/10 blur-xl" />
-
-          <div className="hero-image-card relative overflow-hidden rounded-[20px] border border-[#E5E7EB] bg-[#F7F7F8] shadow-[0_18px_45px_rgba(0,0,0,0.07)] dark:border-gray-800 dark:bg-[#101717]">
-            <img
-              src={heroImage}
-              alt="KTA digital business growth"
-              className="h-[420px] w-full object-cover object-center"
-            />
           </div>
         </div>
       </div>
