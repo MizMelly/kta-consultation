@@ -40,6 +40,7 @@ export default function Hero() {
               className="group flex h-13 items-center justify-center gap-2 rounded-md bg-[#00529C] px-6 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#003F78] hover:shadow-lg sm:h-14 sm:px-7"
             >
               Book a Free Consultation
+
               <ArrowRight
                 size={17}
                 strokeWidth={2}
@@ -47,9 +48,9 @@ export default function Hero() {
               />
             </Link>
 
-            {/* Secondary CTA */}
+            {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/234XXXXXXXXXX"
+              href="https://wa.me/2349168623219"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex h-13 items-center justify-center rounded-md border border-[#EEEEEE] bg-white px-6 text-[14px] font-medium text-[#202020] shadow-[0_2px_8px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-0.5 hover:border-gray-200 hover:bg-gray-50 hover:shadow-md sm:h-14 sm:px-7 dark:border-gray-800 dark:bg-[#101717] dark:text-white dark:hover:bg-[#151D1D]"
