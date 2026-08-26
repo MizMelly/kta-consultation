@@ -5,7 +5,7 @@ const contactItems = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@konfirmtechafrica.com",
+    value: "contact@konfirmtechafrica.com",
   },
   {
     icon: Phone,
@@ -16,6 +16,7 @@ const contactItems = [
     icon: MessageCircle,
     title: "WhatsApp",
     value: "Chat with us instantly",
+    link: "https://wa.me/2349168623219",
   },
 ];
 

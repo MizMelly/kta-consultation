@@ -12,7 +12,7 @@ import ServiceCard from "./ServiceCard";
 const services = [
   {
     icon: Share2,
-    title: "Social Media Mgmt",
+    title: "Social Media Management",
     description: "Strategic content and community building.",
   },
   {
@@ -32,7 +32,7 @@ const services = [
   },
   {
     icon: ShieldCheck,
-    title: "Reputation Mgmt",
+    title: "Reputation Management",
     description: "Monitoring and managing your digital perception.",
   },
   {
