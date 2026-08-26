@@ -18,7 +18,7 @@ const leaders = [
   {
     initials: "IN",
     name: "Iniobong Nyong",
-    role: "Creative Design Lead",
+    role: "Visual Content Lead",
     image: iniobongImage,
     imagePosition: "object-center",
     socials: {
@@ -52,7 +52,7 @@ const leaders = [
 export default function LeadershipSection() {
   return (
     <section className="bg-white px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:bg-[#0B0B0B]">
-      <div className="mx-auto max-w-[1160px]">
+      <div className="mx-auto max-w-290">
         <div className="text-center">
           <h2 className="text-[32px] font-extrabold tracking-[-1px] text-[#050505] sm:text-[36px] dark:text-white">
             Meet the Leadership
@@ -98,7 +98,7 @@ export default function LeadershipSection() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <button className="rounded-[6px] border border-[#E5E7EB] bg-white px-6 py-3 text-[14px] font-bold text-[#111827] shadow-sm transition hover:border-[#1565A9] hover:text-[#1565A9] dark:border-gray-800 dark:bg-[#111111] dark:text-white dark:hover:border-[#1565A9] dark:hover:text-[#F5A21A]">
+          <button className="rounded-md border border-[#E5E7EB] bg-white px-6 py-3 text-[14px] font-bold text-[#111827] shadow-sm transition hover:border-[#1565A9] hover:text-[#1565A9] dark:border-gray-800 dark:bg-[#111111] dark:text-white dark:hover:border-[#1565A9] dark:hover:text-[#F5A21A]">
             Join the Team
           </button>
         </div>
