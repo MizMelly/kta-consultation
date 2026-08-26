@@ -1,4 +1,5 @@
 import { ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const approachItems = [
   {
@@ -53,11 +54,14 @@ export default function ApproachWorks() {
           ))}
         </div>
 
-        <div className="mt-16 flex justify-center">
-          <button className="rounded-full bg-blue-600 px-9 py-4 text-[16px] font-bold text-white shadow-md transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
-            Let's Discuss Your Business
-          </button>
-        </div>
+       <div className="mt-16 flex justify-center">
+  <Link
+    to="/booking"
+    className="rounded-full bg-blue-600 px-9 py-4 text-[16px] font-bold text-white shadow-md transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+  >
+    Let's Discuss Your Business
+  </Link>
+</div>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
@@ -181,28 +182,32 @@ export default function PartnershipProcess() {
           </div>
         </div>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{
-            duration: 0.6,
-            ease: "easeOut",
-          }}
-          className="mt-12 flex justify-center sm:mt-14"
-        >
-          <motion.button
-            whileHover={{
-              y: -2,
-              boxShadow: "0 8px 20px rgba(0, 82, 156, 0.22)",
-            }}
-            whileTap={{ scale: 0.98 }}
-            className="rounded-md bg-[#00529C] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_3px_8px_rgba(0,0,0,0.08)] transition-all duration-300 hover:bg-[#003F78] sm:px-8 sm:text-[16px]"
-          >
-            Start Your Journey With Us
-          </motion.button>
-        </motion.div>
+      {/* CTA */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    duration: 0.6,
+    ease: "easeOut",
+  }}
+  className="mt-12 flex justify-center sm:mt-14"
+>
+  <motion.div
+    whileHover={{
+      y: -2,
+      boxShadow: "0 8px 20px rgba(0, 82, 156, 0.22)",
+    }}
+    whileTap={{ scale: 0.98 }}
+  >
+    <Link
+      to="/booking"
+      className="inline-flex rounded-md bg-[#00529C] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_3px_8px_rgba(0,0,0,0.08)] transition-all duration-300 hover:bg-[#003F78] sm:px-8 sm:text-[16px]"
+    >
+      Start Your Journey With Us
+    </Link>
+  </motion.div>
+</motion.div>
       </div>
     </section>
   );

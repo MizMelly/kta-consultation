@@ -52,7 +52,7 @@ export default function WhyPartner() {
             </p>
 
             <Link
-              to="/contact"
+              to="/booking"
               className="mt-8 inline-flex h-11 items-center justify-center rounded-md bg-[#00529C] px-6 text-[14px] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#003F78] hover:shadow-md"
             >
               Let's Discuss Your Business

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function SuccessStoryCTA() {
   return (
@@ -26,15 +27,23 @@ export default function SuccessStoryCTA() {
         </h2>
 
         <div className="mt-28 flex flex-col items-center gap-4 sm:flex-row sm:gap-10">
-          <button className="inline-flex items-center gap-2 text-[15px] font-bold text-white transition hover:text-[#F5A21A]">
-            Book a Free Consultation
-            <ArrowRight className="h-5 w-5" />
-          </button>
+  {/* Book a Free Consultation */}
+  <Link
+    to="/booking"
+    className="inline-flex items-center gap-2 text-[15px] font-bold text-white transition hover:text-[#F5A21A]"
+  >
+    Book a Free Consultation
+    <ArrowRight className="h-5 w-5" />
+  </Link>
 
-          <button className="rounded-full border border-white/15 bg-white/12 px-8 py-4 text-[15px] font-bold text-white shadow-sm transition hover:border-[#1565A9] hover:bg-[#1565A9]">
-            Learn About KTA
-          </button>
-        </div>
+  {/* Learn About KTA */}
+  <Link
+    to="/about"
+    className="rounded-full border border-white/15 bg-white/12 px-8 py-4 text-[15px] font-bold text-white shadow-sm transition hover:border-[#1565A9] hover:bg-[#1565A9]"
+  >
+    Learn About KTA
+  </Link>
+</div>
       </div>
     </section>
   );

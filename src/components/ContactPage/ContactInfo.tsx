@@ -189,7 +189,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://wa.me/2349168623219"
+            href="https://wa.link/03htci"
             target="_blank"
             rel="noopener noreferrer"
             className="
