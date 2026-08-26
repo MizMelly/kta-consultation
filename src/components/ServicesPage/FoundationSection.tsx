@@ -56,6 +56,7 @@ export default function FoundationSection() {
         lg:py-24
 
         dark:bg-[#0B0B0B]
+        
       "
     >
       <div className="mx-auto max-w-360">
