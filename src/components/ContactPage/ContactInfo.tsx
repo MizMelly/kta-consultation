@@ -6,11 +6,13 @@ const contactItems = [
     icon: Mail,
     title: "Email",
     value: "contact@konfirmtechafrica.com",
+    link: "mailto:contact@konfirmtechafrica.com",
   },
   {
     icon: Phone,
     title: "Phone",
     value: "+234 706 091 3641",
+    link: "tel:+2347060913641",
   },
   {
     icon: MessageCircle,
@@ -34,7 +36,6 @@ export default function ContactInfo() {
           font-bold
           tracking-[-1px]
           text-[#050505]
-
           dark:text-white
         "
       >
@@ -50,7 +51,6 @@ export default function ContactInfo() {
           leading-6
           text-[#737680]
           sm:text-[16px]
-
           dark:text-gray-400
         "
       >
@@ -63,7 +63,32 @@ export default function ContactInfo() {
           const Icon = item.icon;
 
           return (
-            <div key={item.title} className="flex items-center gap-4">
+            <a
+              key={item.title}
+              href={item.link}
+              target={
+                item.title === "WhatsApp" || item.title === "Email"
+                  ? "_blank"
+                  : undefined
+              }
+              rel={
+                item.title === "WhatsApp" || item.title === "Email"
+                  ? "noopener noreferrer"
+                  : undefined
+              }
+              className="
+                group
+                flex
+                items-center
+                gap-4
+                rounded-xl
+                p-2
+                -m-2
+                transition
+                hover:bg-[#F7FAFC]
+                dark:hover:bg-[#111111]
+              "
+            >
               <div
                 className="
                   flex
@@ -75,9 +100,13 @@ export default function ContactInfo() {
                   rounded-xl
                   bg-[#EAF3FA]
                   text-[#00529C]
-
+                  transition
+                  group-hover:bg-[#00529C]
+                  group-hover:text-white
                   dark:bg-[#12324A]
                   dark:text-[#4DA3FF]
+                  dark:group-hover:bg-[#1478C9]
+                  dark:group-hover:text-white
                 "
               >
                 <Icon size={24} />
@@ -89,7 +118,6 @@ export default function ContactInfo() {
                     text-[16px]
                     font-semibold
                     text-[#080808]
-
                     dark:text-gray-100
                   "
                 >
@@ -102,14 +130,16 @@ export default function ContactInfo() {
                     text-[15px]
                     font-medium
                     text-[#737680]
-
+                    transition
+                    group-hover:text-[#00529C]
                     dark:text-gray-400
+                    dark:group-hover:text-[#4DA3FF]
                   "
                 >
                   {item.value}
                 </p>
               </div>
-            </div>
+            </a>
           );
         })}
       </div>
@@ -119,7 +149,6 @@ export default function ContactInfo() {
           mt-12
           h-px
           bg-[#E5E7EB]
-
           dark:bg-gray-800
         "
       />
@@ -130,7 +159,6 @@ export default function ContactInfo() {
             text-[16px]
             font-semibold
             text-[#080808]
-
             dark:text-gray-100
           "
         >
@@ -153,7 +181,6 @@ export default function ContactInfo() {
               text-white
               transition
               hover:bg-[#003F78]
-
               dark:bg-[#1478C9]
               dark:hover:bg-[#0E64A8]
             "
@@ -162,7 +189,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://wa.me/2347060913641"
+            href="https://wa.me/2349168623219"
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -179,7 +206,6 @@ export default function ContactInfo() {
               text-[#00529C]
               transition
               hover:bg-[#EAF3FA]
-
               dark:border-[#4DA3FF]
               dark:text-[#4DA3FF]
               dark:hover:bg-[#12324A]
