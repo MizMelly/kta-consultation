@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import enekemImage from "../../assets/Enekem Banner.jpg.jpeg";
-import veriPropertyImage from "../../assets/veriproperty.jpeg";
+import veriPropertyImage from "../../assets/Veriproperty.jpeg";
 
 const stories = [
   {
