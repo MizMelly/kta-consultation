@@ -113,7 +113,7 @@ export default function Careers() {
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
              <Link
-  to="/booking"
+  to="/join-team"
   className="inline-flex items-center justify-center gap-2 rounded-md bg-[#1565A9] px-6 py-3.5 text-[13px] font-bold text-white transition hover:bg-[#12588f]"
 >
   Join Our Team
