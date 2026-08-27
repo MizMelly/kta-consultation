@@ -4,7 +4,9 @@ import {
   FaLinkedinIn,
   FaTiktok,
   FaXTwitter,
+  FaWhatsapp,
 } from "react-icons/fa6";
+
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
@@ -31,27 +33,32 @@ const socialLinks = [
   {
     label: "Facebook",
     icon: FaFacebookF,
-    href: "#",
+    href: "https://www.facebook.com/share/1HykggXSf1/",
   },
   {
     label: "Instagram",
     icon: FaInstagram,
-    href: "#",
+    href: "https://www.instagram.com/konfirmtechafrica?igsi=NWN3cmJ4c3JuOXA1",
   },
   {
     label: "LinkedIn",
     icon: FaLinkedinIn,
-    href: "#",
+    href: "https://www.linkedin.com/company/konfirmtechltd/",
   },
   {
     label: "X",
     icon: FaXTwitter,
-    href: "#",
+    href: "https://x.com/konfirmtechltd",
   },
   {
     label: "TikTok",
     icon: FaTiktok,
-    href: "#",
+    href: "https://www.tiktok.com/@konfirmtechafrica?_r=1&_t=ZS-994i0DzZ5zL",
+  },
+  {
+    label: "WhatsApp",
+    icon: FaWhatsapp,
+    href: "https://wa.link/03htci",
   },
 ];
 
@@ -61,6 +68,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16 lg:px-10 lg:py-20">
         {/* Main Footer */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.2fr_1.1fr_1.2fr_1fr] lg:gap-12">
+
           {/* Brand */}
           <div>
             <Link to="/home" className="inline-block">
@@ -77,7 +85,7 @@ export default function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
 
@@ -142,6 +150,7 @@ export default function Footer() {
             </h3>
 
             <div className="mt-6 space-y-5">
+
               {/* Email */}
               <div>
                 <p className="text-[13px] text-[#74767D]">
@@ -180,11 +189,13 @@ export default function Footer() {
                   href="https://wa.link/03htci"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 inline-block text-[14px] font-medium text-[#F5A21A] transition-colors hover:text-[#1565A9]"
+                  className="mt-1 inline-flex items-center gap-2 text-[14px] font-medium text-[#F5A21A] transition-colors hover:text-[#1565A9]"
                 >
+                  <FaWhatsapp size={16} />
                   Chat with us →
                 </a>
               </div>
+
             </div>
           </div>
         </div>
@@ -192,6 +203,7 @@ export default function Footer() {
         {/* Bottom Divider */}
         <div className="mt-14 border-t border-[#191A1D] pt-7 sm:mt-16">
           <div className="flex flex-col gap-5 text-[12px] text-[#777A82] lg:flex-row lg:items-center lg:justify-between">
+
             {/* Copyright */}
             <p>
               © 2026 KonfirmTech Africa. All Rights Reserved.
