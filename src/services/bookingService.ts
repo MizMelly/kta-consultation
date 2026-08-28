@@ -13,12 +13,19 @@ export async function submitBooking(
     throw new Error("The booking service is not configured.");
   }
 
+  const bookingPayload = {
+    ...bookingData,
+    formattedTime: formatBookingTime(
+      bookingData.selectedTime,
+    ),
+  };
+
   const response = await fetch(bookingApiUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(bookingData),
+    body: JSON.stringify(bookingPayload),
   });
 
   if (!response.ok) {
@@ -43,11 +50,29 @@ async function readResponse(
   }
 
   try {
-    return JSON.parse(responseText) as BookingApiResponse;
+    const parsedResponse =
+      JSON.parse(responseText) as Partial<BookingApiResponse>;
+
+    return {
+      success: parsedResponse.success ?? true,
+      message:
+        parsedResponse.message ??
+        "Your consultation has been booked successfully.",
+    };
   } catch {
     return {
       success: true,
       message: responseText,
     };
   }
+}
+
+function formatBookingTime(time: string): string {
+  const [hourValue, minuteValue] = time.split(":");
+  const hour = Number(hourValue);
+
+  const period = hour >= 12 ? "PM" : "AM";
+  const twelveHourValue = hour % 12 || 12;
+
+  return `${twelveHourValue}:${minuteValue} ${period}`;
 }

@@ -1,4 +1,5 @@
 import type { BookingFormData } from "../../types/booking.types";
+import LoadingSpinner from "../common/LoadingSpinner";
 
 interface BookingReviewProps {
   formData: BookingFormData;
@@ -144,9 +145,11 @@ export default function BookingReview({
   disabled={isSubmitting}
   className="rounded-lg border border-[#1565A9] bg-[#FFFFFF] px-6 py-3 font-semibold text-[#1565A9] transition-colors hover:bg-[#1565A9] hover:text-[#FFFFFF] disabled:cursor-not-allowed disabled:opacity-50 dark:border-[#FFFFFF] dark:bg-[#FFFFFF] dark:text-[#1565A9] dark:hover:border-[#F5A21A] dark:hover:bg-[#F5A21A] dark:hover:text-[#FFFFFF]"
 >
-  {isSubmitting
-    ? "Confirming booking..."
-    : "Confirm Booking"}
+ {isSubmitting ? (
+  <LoadingSpinner label="Confirming booking..." />
+) : (
+  "Confirm Booking"
+)}
 </button>
         </div>
       </div>
