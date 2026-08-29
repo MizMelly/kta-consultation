@@ -158,11 +158,13 @@ export default function BookingFlow() {
 
       const response = await submitBooking(formData);
 
-      if (!response.success === false) {
-        throw new Error(response.message);
-      }
+      if (response.success === false) {
+  throw new Error(
+    response.message || "We could not complete your booking.",
+  );
+}
 
-      setStage("success");
+setStage("success");
     } catch (bookingError) {
       const message =
         bookingError instanceof Error
