@@ -100,7 +100,7 @@ export default function Careers() {
 
             <p className="mt-7 max-w-3xl text-[15px] leading-7 text-[#92949B] sm:text-[17px] sm:leading-8">
               At Konfirm Tech Africa, we're building more than digital
-              solutions — we're building a community of innovators, creators,
+              solutions we're building a community of innovators, creators,
               and problem-solvers who are passionate about empowering business
               growth through innovation.
             </p>
@@ -383,7 +383,7 @@ export default function Careers() {
 
                 <p className="mt-3 max-w-2xl text-[14px] leading-7 text-[#92949B]">
                   While you wait, become part of the Konfirm Tech Africa
-                  Community — where we share updates, learning opportunities,
+                  Community where we share updates, learning opportunities,
                   announcements, and future openings.
                 </p>
               </div>
