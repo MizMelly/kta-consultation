@@ -1,4 +1,5 @@
 import type { JoinTeamFormData } from "../../types/joinTeam.types";
+import LoadingSpinner from "../common/LoadingSpinner";
 
 interface ApplicationReviewProps {
   formData: JoinTeamFormData;
@@ -149,9 +150,11 @@ export default function ApplicationReview({
               dark:hover:text-[#F5A21A]
             "
           >
-            {isSubmitting
-              ? "Submitting application..."
-              : "Submit Application"}
+           {isSubmitting ? (
+                      <LoadingSpinner label="Submitting application..." />
+                    ) : (
+                      "Submit Application"
+                    )} 
           </button>
         </div>
       </div>

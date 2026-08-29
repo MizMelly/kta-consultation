@@ -152,7 +152,7 @@ export default function JoinTeamFlow() {
       const response =
         await submitJoinTeamApplication(formData);
 
-      if (!response.success) {
+      if (!response.success === false) {
         throw new Error(response.message);
       }
 
