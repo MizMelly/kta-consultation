@@ -314,7 +314,7 @@ export default function Careers() {
               {/* CTA */}
               <div className="border-t border-[#E8E9EB] p-5 dark:border-gray-800">
                 <Link
-  to="/booking"
+  to="/join-team"
   className="flex w-full items-center justify-center gap-2 rounded-md bg-[#1565A9] px-5 py-3.5 text-[13px] font-bold text-white transition hover:bg-[#12588f]"
 >
   Start Your Application
