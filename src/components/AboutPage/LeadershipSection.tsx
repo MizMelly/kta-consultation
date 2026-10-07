@@ -4,9 +4,9 @@ import victorImage from "../../assets/Okworie Victor Emmanuel.jpeg";
 import samuelImage from "../../assets/samuel udio oghenero.jpeg";
 import joyImage from "../../assets/joy ofili.jpeg";
 import abdulganiyuImage from "../../assets/abdulganiyu abdulkarim.jpeg";
-import iniobongImage from "../../assets/iniobong nyong.jpeg";
-import blessingImage from "../../assets/ocha blessing akwa.jpeg";
-import chiomaImage from "../../assets/chioma obiefuna.jpeg";
+import iniobongImage from "../../assets/Iniobong Nyong.jpeg";
+import blessingImage from "../../assets/Ocha Blessing Akwa.jpeg";
+import chiomaImage from "../../assets/Chioma Obiefuna.jpeg";
 
 const leaders = [
   {
