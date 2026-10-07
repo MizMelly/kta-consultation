@@ -5,7 +5,7 @@ import samuelImage from "../../assets/samuel udio oghenero.jpeg";
 import joyImage from "../../assets/joy ofili.jpeg";
 import abdulganiyuImage from "../../assets/abdulganiyu abdulkarim.jpeg";
 import iniobongImage from "../../assets/iniobong nyong.jpeg";
-import blessingImage from "../../assets/ocha blessing akwa.jpeg";
+import blessingImage from "../../assets/Ocha Blessing Akwa.jpeg";
 import chiomaImage from "../../assets/Chioma Obiefuna.jpeg";
 
 const leaders = [
