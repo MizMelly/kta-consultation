@@ -47,7 +47,7 @@ const leaders = [
     image: abdulganiyuImage,
     imagePosition: "object-center",
     socials: {
-      linkedin: "https://www.linkedin.com",
+      linkedin: "https://www.linkedin.com/in/abdul-abdulkarim-67358a157/",
     },
   },
   {
