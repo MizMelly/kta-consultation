@@ -4,9 +4,9 @@ import victorImage from "../../assets/Okworie Victor Emmanuel.jpeg";
 import samuelImage from "../../assets/samuel udio oghenero.jpeg";
 import joyImage from "../../assets/joy ofili.jpeg";
 import abdulganiyuImage from "../../assets/abdulganiyu abdulkarim.jpeg";
-import iniobongImage from "../../assets/Iniobong Nyong.jpeg";
-import blessingImage from "../../assets/Ocha Blessing Akwa.jpeg";
-import chiomaImage from "../../assets/Chioma Obiefuna.jpeg";
+import iniobongImage from "../../assets/iniobong nyong.jpeg";
+import blessingImage from "../../assets/ocha blessing akwa.jpeg";
+import chiomaImage from "../../assets/chioma obiefuna.jpeg";
 
 const leaders = [
   {
@@ -87,7 +87,7 @@ const leaders = [
 export default function LeadershipSection() {
   return (
     <section className="bg-white px-5 py-16 sm:px-8 lg:px-10 lg:py-20 dark:bg-[#0B0B0B]">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-290">
         <div className="text-center">
           <h2 className="text-[32px] font-extrabold tracking-[-1px] text-[#050505] sm:text-[36px] dark:text-white">
             Meet the Leadership
@@ -98,10 +98,10 @@ export default function LeadershipSection() {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {leaders.map((leader) => (
-            <div key={leader.name} className="group text-center">
-              <div className="mx-auto aspect-square w-full max-w-[300px] overflow-hidden rounded-[18px] border border-[#E5E7EB] bg-[#F4F4F5] shadow-[0_10px_25px_rgba(15,23,42,0.08)] transition-transform duration-300 group-hover:-translate-y-1 dark:border-gray-800 dark:bg-[#111111] dark:shadow-none sm:max-w-none">
+            <div key={leader.name} className="text-center">
+              <div className="aspect-square overflow-hidden rounded-[14px] border border-[#E5E7EB] bg-[#F4F4F5] dark:border-gray-800 dark:bg-[#111111]">
                 <img
                   src={leader.image}
                   alt={leader.name}
@@ -109,7 +109,7 @@ export default function LeadershipSection() {
                 />
               </div>
 
-              <h3 className="mt-6 text-[18px] font-extrabold tracking-[-0.3px] text-[#050505] dark:text-white">
+              <h3 className="mt-7 text-[18px] font-extrabold tracking-[-0.3px] text-[#050505] dark:text-white">
                 {leader.name}
               </h3>
 
