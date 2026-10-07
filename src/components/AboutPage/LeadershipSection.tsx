@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
 import victorImage from "../../assets/Okworie Victor Emmanuel.jpeg";
+import samuelImage from "../../assets/samuel udio oghenero.jpeg";
+import joyImage from "../../assets/joy ofili.jpeg";
+import abdulganiyuImage from "../../assets/abdulganiyu abdulkarim.jpeg";
 import iniobongImage from "../../assets/iniobong nyong.jpeg";
 import blessingImage from "../../assets/ocha blessing akwa.jpeg";
 import chiomaImage from "../../assets/chioma obiefuna.jpeg";
@@ -15,6 +18,36 @@ const leaders = [
     socials: {
       linkedin:
         "https://www.linkedin.com/in/vepdicreative?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    },
+  },
+  {
+    initials: "SU",
+    name: "Samuel Udio Oghenero",
+    role: "AI Automation Lead",
+    image: samuelImage,
+    imagePosition: "object-[center_18%]",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/samuel-udio-19b2273a5",
+    },
+  },
+  {
+    initials: "JO",
+    name: "Joy Ofili",
+    role: "Social Media Manager & Content Lead",
+    image: joyImage,
+    imagePosition: "object-center",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/joy-ofili",
+    },
+  },
+  {
+    initials: "AA",
+    name: "Abdulganiyu Abdulkarim",
+    role: "Business Developer",
+    image: abdulganiyuImage,
+    imagePosition: "object-center",
+    socials: {
+      linkedin: "https://www.linkedin.com",
     },
   },
   {
