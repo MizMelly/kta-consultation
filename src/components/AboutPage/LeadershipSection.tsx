@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-import victorImage from "../../assets/Okworie Victor Emmanuel.png";
-import iniobongImage from "../../assets/Iniobong Nyong.png";
-import blessingImage from "../../assets/Ocha Blessing Akwa.jpeg";
-import chiomaImage from "../../assets/Chioma Obiefuna.jpeg";
+import victorImage from "../../assets/Okworie Victor Emmanuel.jpeg";
+import iniobongImage from "../../assets/iniobong nyong.jpeg";
+import blessingImage from "../../assets/ocha blessing akwa.jpeg";
+import chiomaImage from "../../assets/chioma obiefuna.jpeg";
 
 const leaders = [
   {
